@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane id="AnchorPane" prefHeight="909.0" prefWidth="1307.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chuvachokpole.FXMLDocumentController">
+   <children>
+      <Circle fx:id="aura" fill="#dfe2e4" layoutX="235.0" layoutY="440.0" radius="175.0" stroke="BLACK" strokeType="INSIDE" />
+      <ImageView fx:id="pacan" fitHeight="150.0" fitWidth="200.0" layoutX="172.0" layoutY="374.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="https://cs5.pikabu.ru/images/big_size_comm_an/2015-05_2/14309393685643.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="poc1" fitHeight="150.0" fitWidth="200.0" layoutX="1021.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="https://i.ytimg.com/vi/EvUh0inezII/hqdefault.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="poc2" fitHeight="150.0" fitWidth="200.0" layoutX="78.0" layoutY="789.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="https://i.ytimg.com/vi/EvUh0inezII/hqdefault.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="poc3" fitHeight="150.0" fitWidth="200.0" layoutX="95.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="https://i.ytimg.com/vi/EvUh0inezII/hqdefault.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="poc4" fitHeight="150.0" fitWidth="200.0" layoutX="731.0" layoutY="643.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="https://i.ytimg.com/vi/EvUh0inezII/hqdefault.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="1249.0" layoutY="182.0" mnemonicParsing="false" onAction="#up" text="up" />
+      <Button layoutX="1249.0" layoutY="207.0" mnemonicParsing="false" onAction="#down" text="down" />
+      <Button layoutX="1249.0" layoutY="232.0" mnemonicParsing="false" onAction="#left" text="left" />
+      <Button layoutX="1249.0" layoutY="257.0" mnemonicParsing="false" onAction="#right" text="right" />
+      <Button layoutX="1246.0" layoutY="282.0" mnemonicParsing="false" onAction="#attack" text="attack" />
+   </children>
+</AnchorPane>
