@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="419.0" prefWidth="621.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="savegame.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <TitledPane animated="false" layoutX="181.0" layoutY="78.0" prefHeight="264.0" prefWidth="186.0" text="untitled">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="199.0" prefWidth="169.0">
+               <children>
+                  <Button fx:id="lvl1" layoutX="14.0" layoutY="2.0" mnemonicParsing="false" text="lvl_1" />
+                  <Button fx:id="lvl2" layoutX="14.0" layoutY="40.0" mnemonicParsing="false" text="lvl_2" />
+                  <Button fx:id="lvl3" layoutX="14.0" layoutY="79.0" mnemonicParsing="false" text="lvl_3" />
+                  <Button fx:id="lvl4" layoutX="14.0" layoutY="123.0" mnemonicParsing="false" text="lvl_4" />
+                  <Button fx:id="lvl5" layoutX="14.0" layoutY="160.0" mnemonicParsing="false" text="lvl_5" />
+                  <Button fx:id="lvl6" layoutX="14.0" layoutY="198.0" mnemonicParsing="false" text="lvl_6" />
+                  <Button fx:id="lvl7" layoutX="72.0" layoutY="2.0" mnemonicParsing="false" text="lvl_7" />
+                  <Button fx:id="lvl8" layoutX="72.0" layoutY="40.0" mnemonicParsing="false" text="lvl_8" />
+                  <Button fx:id="lvl9" layoutX="72.0" layoutY="79.0" mnemonicParsing="false" text="lvl_9" />
+                  <Button fx:id="lvl10" layoutX="69.0" layoutY="123.0" mnemonicParsing="false" text="lvl_10" />
+                  <Button fx:id="lvl11" layoutX="69.0" layoutY="160.0" mnemonicParsing="false" text="lvl_11" />
+                  <Button fx:id="lvl12" layoutX="69.0" layoutY="198.0" mnemonicParsing="false" text="lvl_12" />
+                  <Button fx:id="lvl13" layoutX="127.0" layoutY="2.0" mnemonicParsing="false" text="lvl_13" />
+                  <Button fx:id="lvl14" layoutX="127.0" layoutY="40.0" mnemonicParsing="false" text="lvl_14" />
+                  <Button fx:id="lvl15" layoutX="127.0" layoutY="79.0" mnemonicParsing="false" text="lvl_15" />
+                  <Button fx:id="lvl16" layoutX="127.0" layoutY="123.0" mnemonicParsing="false" text="lvl_16" />
+                  <Button fx:id="lvl17" layoutX="127.0" layoutY="160.0" mnemonicParsing="false" text="lvl_17" />
+                  <Button fx:id="lvl18" layoutX="127.0" layoutY="198.0" mnemonicParsing="false" text="lvl_18" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+      <Button layoutX="452.0" layoutY="95.0" mnemonicParsing="false" onAction="#save" text="Save the game" />
+      <Button layoutX="59.0" layoutY="95.0" mnemonicParsing="false" onAction="#openLvlList" text="Open Level List" />
+      <Button layoutX="195.0" layoutY="14.0" mnemonicParsing="false" onAction="#levelup" text="+level" />
+      <Button layoutX="285.0" layoutY="14.0" mnemonicParsing="false" onAction="#leveldown" text="-level" />
+      <Button layoutX="59.0" layoutY="137.0" mnemonicParsing="false" onAction="#loadLvlFromFile" text="LoadLvlFromFile" />
+    </children>
+</AnchorPane>
