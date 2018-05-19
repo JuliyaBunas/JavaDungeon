@@ -1,70 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.RadioButton?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.AnchorPane?>
-
-<AnchorPane id="AnchorPane" prefHeight="419.0" prefWidth="621.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication15.FXMLDocumentController">
-    <children>
-      <TextField fx:id="textf" layoutX="14.0" layoutY="14.0" />
-      <RadioButton layoutX="163.0" layoutY="18.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="204.0" onAction="#switchlvl"/>
-    </children>
-</AnchorPane>
-
-
-
-//////////////////////////////////////////////
-
-
-<?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.scene.control.Button?>
+<?import javafx.scene.Group?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.MenuButton?>
-<?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="419.0" prefWidth="621.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication15.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication15.FXMLDocumentController">
     <children>
-        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
-      <TitledPane layoutX="181.0" layoutY="78.0" prefHeight="264.0" prefWidth="186.0" text="untitled">
-        <content>
-          <AnchorPane fx:id="anch" minHeight="0.0" minWidth="0.0" prefHeight="199.0" prefWidth="169.0">
-               <children>
-                  <Button fx:id="lvl1" layoutX="14.0" layoutY="2.0" mnemonicParsing="false" text="lvl_1" />
-                  <Button fx:id="lvl2" layoutX="14.0" layoutY="40.0" mnemonicParsing="false" text="lvl_2" />
-                  <Button fx:id="lvl3" layoutX="14.0" layoutY="79.0" mnemonicParsing="false" text="lvl_3" />
-                  <Button fx:id="lvl4" layoutX="14.0" layoutY="123.0" mnemonicParsing="false" text="lvl_4" />
-                  <Button fx:id="lvl5" layoutX="14.0" layoutY="160.0" mnemonicParsing="false" text="lvl_5" />
-                  <Button fx:id="lvl6" layoutX="14.0" layoutY="198.0" mnemonicParsing="false" text="lvl_6" />
-                  <Button fx:id="lvl7" layoutX="72.0" layoutY="2.0" mnemonicParsing="false" text="lvl_7" />
-                  <Button fx:id="lvl8" layoutX="72.0" layoutY="40.0" mnemonicParsing="false" text="lvl_8" />
-                  <Button fx:id="lvl9" layoutX="72.0" layoutY="79.0" mnemonicParsing="false" text="lvl_9" />
-                  <Button fx:id="lvl10" layoutX="69.0" layoutY="123.0" mnemonicParsing="false" text="lvl_10" />
-                  <Button fx:id="lvl11" layoutX="69.0" layoutY="160.0" mnemonicParsing="false" text="lvl_11" />
-                  <Button fx:id="lvl12" layoutX="69.0" layoutY="198.0" mnemonicParsing="false" text="lvl_12" />
-                  <Button fx:id="lvl13" layoutX="127.0" layoutY="2.0" mnemonicParsing="false" text="lvl_13" />
-                  <Button fx:id="lvl14" layoutX="127.0" layoutY="40.0" mnemonicParsing="false" text="lvl_14" />
-                  <Button fx:id="lvl15" layoutX="127.0" layoutY="79.0" mnemonicParsing="false" text="lvl_15" />
-                  <Button fx:id="lvl16" layoutX="127.0" layoutY="123.0" mnemonicParsing="false" text="lvl_16" />
-                  <Button fx:id="lvl17" layoutX="127.0" layoutY="160.0" mnemonicParsing="false" text="lvl_17" />
-                  <Button fx:id="lvl18" layoutX="127.0" layoutY="198.0" mnemonicParsing="false" text="lvl_18" />
-               </children>
-            </AnchorPane>
-        </content>
-      </TitledPane>
-      <Button fx:id="but1" layoutX="452.0" layoutY="95.0" mnemonicParsing="false" onAction="#save" text="Save the game" />
-      <Button fx:id="but2" layoutX="59.0" layoutY="95.0" mnemonicParsing="false" onAction="#openLvlList" text="Open Level List" />
-      <Button fx:id="but3" layoutX="195.0" layoutY="14.0" mnemonicParsing="false" onAction="#levelup" text="+level" />
-      <Button fx:id="but4" layoutX="285.0" layoutY="14.0" mnemonicParsing="false" onAction="#leveldown" text="-level" />
-      <Button fx:id="but5" layoutX="59.0" layoutY="137.0" mnemonicParsing="false" onAction="#loadLvlFromFile" text="LoadLvlFromFile" />
-      <Button fx:id="but6" layoutX="520.0" layoutY="185.0" mnemonicParsing="false" onAction="#switchlvl" text="SwitchLevel" />
-      <MenuButton layoutX="17.0" layoutY="249.0" mnemonicParsing="false" text="MenuButton">
-        <items>
-          <MenuItem mnemonicParsing="false" text="Action 1" />
-          <MenuItem mnemonicParsing="false" text="Action 2" />
-        </items>
-      </MenuButton>
+      <ImageView fitHeight="1080.0" fitWidth="1920.0">
+         <image>
+            <Image url="@pixil-frame-0%20(7).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="392.0" fitWidth="409.0" layoutX="743.0" layoutY="407.0" onMouseClicked="#Eclick">
+         <image>
+            <Image url="@diller.gif" />
+         </image>
+      </ImageView>
+      <Group fx:id="dialog" layoutX="26.0" layoutY="9.0" visible="false">
+         <children>
+            <Label layoutX="5.0" prefHeight="125.0" prefWidth="1866.0" style="-fx-background-color: WHITE;" />
+            <Label layoutY="940.0" prefHeight="103.0" prefWidth="1870.0" style="-fx-background-color: WHITE;" text="Привет">
+               <font>
+                  <Font name="System Bold" size="58.0" />
+               </font>
+            </Label>
+         </children>
+      </Group>
     </children>
 </AnchorPane>
-

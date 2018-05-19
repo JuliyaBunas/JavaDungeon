@@ -5,6 +5,7 @@
  */
 package javafxapplication15;
 
+import static java.awt.AlphaComposite.SRC_OVER;
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;
 import javafx.event.EventHandler;
@@ -13,6 +14,7 @@ import javafx.scene.Group;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.effect.BlendMode;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyEvent;
@@ -24,10 +26,10 @@ import javafx.stage.Stage;
  * @author PC
  */
 public class JavaFXApplication15 extends Application {
-    private static final double W = 600, H = 800;
+    private static final double W = 1920, H = 1080;
 
     private static final String HERO_IMAGE_LOC =
-            "http://icons.iconarchive.com/icons/raindropmemory/legendora/64/Hero-icon.png";
+            "https://i.pinimg.com/originals/d7/b3/da/d7b3da3d4b19b7f0c44673374158df0a.gif";
 
     private Image heroImage;
     private Node  hero;
@@ -42,10 +44,10 @@ public class JavaFXApplication15 extends Application {
         hero = new ImageView(heroImage);
         
 
-        moveHeroTo(W / 2, H / 2);
+        moveHeroTo( 2, 2);
         Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
         
-        Group dungeon = new Group(hero, root);
+        Group dungeon = new Group(root, hero);
         
         Scene scene = new Scene(dungeon, W, H, Color.FORESTGREEN);
         
@@ -80,11 +82,11 @@ public class JavaFXApplication15 extends Application {
             public void handle(long now) {
                 int dx = 0, dy = 0;
 
-                if (goNorth) dy -= 1;
-                if (goSouth) dy += 1;
-                if (goEast)  dx += 1;
-                if (goWest)  dx -= 1;
-                if (running) { dx *= 3; dy *= 3; }
+                if (goNorth) dy -= 2;
+                if (goSouth) dy += 2;
+                if (goEast)  dx += 2;
+                if (goWest)  dx -= 2;
+                if (running) { dx *= 4; dy *= 4; }
 
                 moveHeroBy(dx, dy);
             }
