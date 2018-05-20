@@ -17,6 +17,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Group;
 import javafx.scene.control.Button;
+import javafx.scene.control.DialogPane;
 import javafx.scene.control.Label;
 import javafx.scene.control.TitledPane;
 import javafx.scene.input.KeyEvent;
@@ -28,13 +29,24 @@ import javafx.scene.layout.AnchorPane;
  */
 public class FXMLDocumentController implements Initializable {
     @FXML
-    Group dialog;
+    Label dialog;
+    @FXML
+    DialogPane dialogcloud;
     @FXML
     private JavaFXApplication15 hero; 
     @FXML
+    private int kk = 1;
+    @FXML
     private void Eclick(){
-        dialog.setVisible(true);
-        
+        if(kk == 1){
+            dialog.setVisible(true);
+            dialogcloud.setVisible(true);
+            kk = 0;
+        }else{
+            dialog.setVisible(false);
+            dialogcloud.setVisible(false);
+            kk = 1;
+        }
     }
     
     @FXML

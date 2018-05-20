@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.Group?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DialogPane?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
@@ -12,26 +12,16 @@
 
 <AnchorPane id="AnchorPane" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication15.FXMLDocumentController">
     <children>
-      <ImageView fitHeight="1080.0" fitWidth="1920.0">
+      <ImageView fitHeight="1080.0" fitWidth="1920.0" layoutX="1.0">
          <image>
             <Image url="@pixil-frame-0%20(7).png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="392.0" fitWidth="409.0" layoutX="743.0" layoutY="407.0" onMouseClicked="#Eclick">
+      <ImageView fitHeight="392.0" fitWidth="409.0" layoutX="743.0" layoutY="409.0" onMouseClicked="#Eclick">
          <image>
             <Image url="@diller.gif" />
          </image>
       </ImageView>
-      <Group fx:id="dialog" layoutX="26.0" layoutY="9.0" visible="false">
-         <children>
-            <Label layoutX="5.0" prefHeight="125.0" prefWidth="1866.0" style="-fx-background-color: WHITE;" />
-            <Label layoutY="940.0" prefHeight="103.0" prefWidth="1870.0" style="-fx-background-color: WHITE;" text="Привет">
-               <font>
-                  <Font name="System Bold" size="58.0" />
-               </font>
-            </Label>
-         </children>
-      </Group>
       <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
       <MenuButton layoutX="14.0" layoutY="14.0" mnemonicParsing="false" style="-fx-graphic: url('https://psv4.userapi.com/c834600/u206788755/docs/d13/f5e403714732/Menu.png?extra=rh39xR85L9gOrjE_94VWQl-XFrlsT3Icj7Oc53eqfGXprpspv1E92IFO2zTVDMlMidYETtnwB-pDSipxpQi1N6kyoIZXC4i29Dw83SwUVPR5NIX07X-HeM-dz_UYK4wxGqJ8hglgh1UtERA');">
          <items>
@@ -59,5 +49,7 @@
          <font>
             <Font name="System Bold Italic" size="20.0" />
          </font></Button>
+      <Label fx:id="dialog" layoutX="933.0" layoutY="224.0" prefHeight="81.0" visible = "false" prefWidth="129.0" style="-fx-graphic: url('https://psv4.userapi.com/c834603/u206788755/docs/d4/32ddfd3b66de/photo.png?extra=_RKI6KfN0t5oDhe9o7B43uK_yQ_2wOz7DFD5w3T1-CqwxTsZ94FcD3g8gOVxMCAtC8C_KUK_QDBLyAgm7cA4NJAaSVS8E453IjRRKkiU3hPcwFfv5Ekxxb0yoz0Tvw6-AcKFENKWnYp3g5U');" />
+      <DialogPane fx:id="dialogcloud" contentText="Начнем. " visible = "false" headerText="Приветствую тебя, странник. Ты готов к незабываемым приключениям в мире кода?" layoutX="976.0" layoutY="266.0" prefHeight="129.0" prefWidth="170.0" />
     </children>
 </AnchorPane>
