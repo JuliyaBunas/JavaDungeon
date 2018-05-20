@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication15.FXMLDocumentController">
+    <children>
+      <ImageView fitHeight="1080.0" fitWidth="1920.0" layoutX="1.0">
+         <image>
+            <Image url="@pixil-frame-0%20(7).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="392.0" fitWidth="409.0" layoutX="743.0" layoutY="409.0" onMouseClicked="#Eclick">
+         <image>
+            <Image url="@diller.gif" />
+         </image>
+      </ImageView>
+      <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <MenuButton layoutX="14.0" layoutY="14.0" mnemonicParsing="false" style="-fx-graphic: url('');">
+         <items>
+          <MenuItem mnemonicParsing="false" text="Save your game level">
+               <graphic>
+                  <Button mnemonicParsing="false" onAction="#save" text="save" />
+               </graphic>
+            </MenuItem>
+          <MenuItem mnemonicParsing="false" text="Load level">
+               <graphic>
+                  <Button mnemonicParsing="false" onAction="#loadLvlFromFile" text="load" />
+               </graphic>
+            </MenuItem>
+         </items>
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@Menu.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </MenuButton>
+        <Button id="kk" fx:id="but2" layoutX="259.0" layoutY="28.0" mnemonicParsing="false" onAction="#but2action" prefHeight="44.0" prefWidth="92.0" style="-fx-background-color: pink; -fx-border-radius: 10;" text="Button" textFill="#b921c1" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font></Button>
+        <Button fx:id="but1" layoutX="150.0" layoutY="28.0" mnemonicParsing="false" onAction="#but1action" style="-fx-background-color: pink;" text="Button" textFill="#b921c1" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font></Button>
+        <Button fx:id="but3" layoutX="368.0" layoutY="28.0" mnemonicParsing="false" onAction="#but3action" style="-fx-background-color: pink;" text="Button" textFill="#b921c1" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font></Button>
+      
+         <ImageView visible="false" fx:id="dialog" fitHeight="242.0" fitWidth="232.0" layoutX="946.0" layoutY="224.0">
+         <image>
+            <Image url="@photo.png" />
+         </image>
+      </ImageView>
+      <DialogPane visible="false" fx:id="dialogcloud" contentText="Начнем. " headerText="Приветствую тебя, странник. Ты готов к незабываемым приключениям в мире кода?" layoutX="977.0" layoutY="281.0" prefHeight="110.0" prefWidth="170.0" style="-fx-background-color: white;" />
+    </children>
+</AnchorPane>
