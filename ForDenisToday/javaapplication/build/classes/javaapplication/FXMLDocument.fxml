@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="445.0" prefWidth="626.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaapplication.FXMLDocumentController">
+    <children>
+        <Button fx:id="button" layoutX="126" layoutY="90" onAction="#handleButtonAction" text="Click Me!" />
+      
+      <ImageView fx:id="player" fitHeight="1080.0" fitWidth="1920.0">
+         <image>
+            <Image url="@pixil-frame-0%20(7).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="392.0" fitWidth="409.0" layoutX="743.0" layoutY="407.0">
+         <image>
+            <Image url="@diller.gif" />
+         </image>
+      </ImageView>
+      <Group fx:id="dialog" layoutX="26.0" layoutY="9.0" visible="false">
+         <children>
+            <Label layoutX="5.0" prefHeight="125.0" prefWidth="1866.0" style="-fx-background-color: WHITE;" />
+            <Label layoutY="940.0" prefHeight="103.0" prefWidth="1870.0" style="-fx-background-color: WHITE;" text="Привет">
+               <font>
+                  <Font name="System Bold" size="58.0" />
+               </font>
+            </Label>
+         </children>
+      </Group>
+      <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <MenuButton layoutX="14.0" layoutY="14.0" mnemonicParsing="false" style="-fx-graphic: url('https://psv4.userapi.com/c834600/u206788755/docs/d13/f5e403714732/Menu.png?extra=rh39xR85L9gOrjE_94VWQl-XFrlsT3Icj7Oc53eqfGXprpspv1E92IFO2zTVDMlMidYETtnwB-pDSipxpQi1N6kyoIZXC4i29Dw83SwUVPR5NIX07X-HeM-dz_UYK4wxGqJ8hglgh1UtERA');">
+         <items>
+          <MenuItem mnemonicParsing="false" text="Save your game level">
+               <graphic>
+                  <Button mnemonicParsing="false" text="save" />
+               </graphic>
+            </MenuItem>
+          <MenuItem mnemonicParsing="false" text="Load level">
+               <graphic>
+                  <Button mnemonicParsing="false" text="load" />
+               </graphic>
+            </MenuItem>
+         </items>
+      </MenuButton>
+        <Button id="kk" fx:id="but2" layoutX="259.0" layoutY="28.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="92.0" style="-fx-background-color: pink; -fx-border-radius: 10;" text="Button" textFill="#b921c1" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font></Button>
+        <Button fx:id="but1" layoutX="150.0" layoutY="28.0" mnemonicParsing="false" style="-fx-background-color: pink;" text="Button" textFill="#b921c1" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font></Button>
+        <Button fx:id="but3" layoutX="368.0" layoutY="28.0" mnemonicParsing="false" style="-fx-background-color: pink;" text="Button" textFill="#b921c1" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font></Button>
+         <ImageView fx:id="monstr1" fitHeight="200.0" fitWidth="200.0" layoutX="200.0" layoutY="79.0" visible="false">
+         <image>
+            <Image url="@Bag-static1.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="monstr2" fitHeight="200.0" fitWidth="200.0" layoutX="400.0" layoutY="79.0" visible="false">
+         <image>
+            <Image url="@Bag-static1.gif" />
+         </image>
+      </ImageView>
+<ImageView fx:id="monstr3" fitHeight="200.0" fitWidth="200.0" layoutX="500.0" layoutY="79.0" visible="false">
+         <image>
+            <Image url="@Bag-static1.gif" />
+         </image>
+      </ImageView>
+
+
+
+      <ImageView fx:id="MonstrDamaged" fitHeight="200.0" fitWidth="200.0" layoutX="500.0" layoutY="79.0" visible="false">
+         <image>
+            <Image url="@Bag%20static1Damaged.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="MonstrAlive" fitHeight="200.0" fitWidth="200.0" layoutX="500.0" layoutY="79.0" visible="false">
+         <image>
+            <Image url="@Bag-static1.gif" />
+         </image>
+      </ImageView>
+      
+      <ImageView fx:id="PlayerDamaged" fitHeight="200.0" fitWidth="200.0" layoutX="500.0" layoutY="79.0" visible="false">
+         <image>
+            <Image url="https://github.com/JuliyaBunas/JavaDungeon/blob/damagedPlayer/ForDamagedIlia.gif?raw=true" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="coffee" layoutX="471.0" layoutY="480" visible="false">
+         <image>
+            <Image url="@coffee.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="RedMonitor" visible="false">
+         <image>
+            <Image url="@RedBackground.png" />
+         </image>
+      </ImageView>
+      
+      <Label fx:id="gameOver" alignment="CENTER" contentDisplay="CENTER" layoutX="471.0" layoutY="266.0" prefHeight="516.0" prefWidth="953.0" text="GAME OVER" textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="System Bold" size="150.0" />
+         </font>
+      </Label>
+      
+      
+      <ImageView fx:id="tenhp" layoutX="1428.0" layoutY="0.0" visible="true">
+         <image>
+            <Image url="@tenhp.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ninehp" layoutX="1428.0" layoutY="0.0" visible="false">
+         <image>
+            <Image url="@ninehp.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="eighthp" layoutX="1428.0" layoutY="0.0" visible="false">
+         <image>
+            <Image url="@eighthp.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="sevenhp" layoutX="1428.0" layoutY="0.0" visible="false">
+         <image>
+            <Image url="@sevenhp.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="sixhp" layoutX="1428.0" layoutY="0.0" visible="false">
+         <image>
+            <Image url="@sixhp.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="fivehp" layoutX="1428.0" layoutY="0.0" visible="false">
+         <image>
+            <Image url="@fivehp.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="fourhp" layoutX="1428.0" layoutY="0.0" visible="false">
+         <image>
+            <Image url="@fourhp.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="threehp" layoutX="1428.0" layoutY="0.0" visible="false">
+         <image>
+            <Image url="@threehp.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="twohp" layoutX="1428.0" layoutY="0.0" visible="false">
+         <image>
+            <Image url="@twohp.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="onehp" layoutX="1428.0" layoutY="0.0" visible="false">
+         <image>
+            <Image url="@onehp.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="zerohp" layoutX="1428.0" layoutY="0.0" visible="false">
+         <image>
+            <Image url="@zerohp.jpg" />
+         </image>
+      </ImageView>
+      
+      
+      
+      
+    </children>
+</AnchorPane>
